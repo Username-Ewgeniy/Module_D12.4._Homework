@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'news',
     'sign',
     'protect',
-    
+    'accounts',
     
 ]
 
@@ -178,7 +178,7 @@ if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ADMINS = [
-    ('ADMINS', EMAIL_HOST_USER)
+    ('ADMINS', SERVER_EMAIL)
 ]
 
 CACHES = {
